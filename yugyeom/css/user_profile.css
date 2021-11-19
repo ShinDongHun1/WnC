@@ -1,0 +1,57 @@
+.applied_subject_container{
+    width: 100%;
+    align-items: center;
+}
+
+.applied_subject_list_container{
+    align-items: center;
+}
+.applied_subject_list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.table_title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.user_profile_container{
+
+    height: 200px;
+    font-size: 1.3rem;
+    align-items: center;
+    
+}
+
+.user_profile_box{
+    display: flex;
+    justify-content: center;
+
+}
+
+.user_profile{
+    font-size: 1.5rem;
+    height: 100%;
+    margin:10px;
+    line-height: 30px;
+    width: 250px;
+}
+tr{
+    height: 40px;
+}
+
+
+#info_img{
+
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.img_container{
+
+
+}

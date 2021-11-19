@@ -1,0 +1,201 @@
+
+.teacher_list_container{
+    width:1090px;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    transition: 0.4s;
+    /* IE11 에서는 flex 설정시, 디폴트로 flex 아이템들에 고정 너비를 무시 */
+    flex-shrink: 0;
+    margin: 0 auto;
+    background-color: rgba(224, 255, 255, 0.425);
+    border-radius: 4px;
+}
+
+.teacher_list_title{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 50px;
+    border: solid 1px;
+    background-color: rgba(242, 250, 255, 0.527);
+    border-radius: 4px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+#teacher_list_select{
+    height: 40px;
+    border-radius: 4px;
+}
+
+#teacher_search{
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 4px;
+}
+
+.teacher_list {
+    display: flex;
+    list-style: none;
+    padding-left:0px;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+#teacher_list_select{
+    border:none;
+}
+
+#teacher_search{
+    border:none;
+}
+
+.teacher_card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 10px 10px;
+    transition: 0.4s;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    flex-shrink: 0;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 224, 0);
+}
+.teacher_card:hover {
+    transform: translate(0, -3px);
+  }
+
+.teacher_img {
+    max-width: 250px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.teacher_description {
+    width: 100%;
+}
+
+.teacher_description_top {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 9px;
+    height: 26px;
+    align-items: center;
+
+}
+.teacher_description_mid{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 9px;
+    height: 26px;
+    align-items: center;
+}
+
+.teacher_description_bottom{
+    height: 26px;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.chatting_button {
+    height: 26px;
+    
+}
+
+.teacher_name {}
+
+
+
+
+/* ----------------------------------------------------------------- */
+
+.popular_teacher_container{
+    width:1120px;
+}
+
+.popular_title_container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .popular_title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #545e6f;
+    margin-right: 30px;
+  }
+  
+  .slide_prev {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(47, 48, 89);
+  }
+  
+  .slide_next {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cfd8dc;
+  }
+  
+  .slide_prev_hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(-2px);
+  }
+  
+  .slide_next_hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(2px);
+  }
+  
+  .arrow-container {
+    display: flex;
+  }
+
+  .popular_teacher_list{
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    overflow: none; 
+    max-width: 1200px;
+    overflow: none;
+  }
+
+  table{
+    width: 100%;
+    border-top: 1px solid gray;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  th, td{
+    border-bottom: 1px solid gray;
+    padding: 6px;
+    text-align: center;
+  }
+  
+  #titleCell{
+    text-align: left;
+  }
+  
+  #btn-createNewPost{
+    margin: 15px 0px;
+    float: right;
+    background-color: white;
+  }
+
+  .notification_modal, .user_modal, .message_modal .chatting_modal{
+      display: none;
+      position: fixed;
+      right: 20px;
+      transform: translateY(-24%);
+      background-color: rgb(70, 70, 70);
+      border-radius: 3px;
+  }

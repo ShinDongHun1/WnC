@@ -1,0 +1,227 @@
+@import 'newPost.css';
+@import 'home.css';
+@import 'viewPost.css';
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
+/* 
+  font-family: 'Yuji Boku', serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Yuji+Boku&display=swap');
+/* 
+font-family: 'Road Rage', cursive;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Road+Rage&family=Yuji+Boku&display=swap');
+/* 
+font-family: 'Monofett', cursive;
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Monofett&family=Road+Rage&family=Yuji+Boku&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Sunflower:wght@300&display=swap');
+
+
+ * {
+  box-sizing: border-box;
+  font-family: 'Nanum Myeongjo', serif;
+  /* font-size: 30px; */
+}
+
+.inner {
+  width: 100%; /* 가로 사이즈가 1200px 넘는 해상도에서는 max-width 설정 */
+  height: 100%; /* align-items 등으로 수직 가운데 정렬을 위해, 알맞은 height 설정이 필요함 */
+  margin: 0 auto; /*가운데 정렬: 동일 요소에 width 가 설정되어 있을 때에만 적용 */
+  padding: 0rem 2rem; /* 좌우 padding 을 살짝 주어서, 좌우에 딱 붙지 않도록 함 */
+  overflow: hidden; /*넘치는 영역에 대해서는 표시안되도록 작성해야 함 */
+}
+
+body {
+  /* margin: 0 auto; */
+  color: #3f464d;
+  font-family: "Spoqa Han Sans Neo", "Sans-serif";
+  font-weight: 700;
+}
+
+.hidden{
+  visibility: hidden;
+  display: none;
+}
+
+/* a 링크 태그 스타일 초기화 */
+a {
+  all: unset;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+.inner {
+  width: 100%; /* 가로 사이즈가 1200px 넘는 해상도에서는 max-width 설정 */
+  height: 100%; /* align-items 등으로 수직 가운데 정렬을 위해, 알맞은 height 설정이 필요함 */
+  margin: 0 auto; /* 가운데 정렬: 동일 요소에 width 가 설정되어 있을 때에만 적용 */
+  padding: 0rem 2rem; /* 좌우 padding 을 살짝 주어서, 좌우에 딱 붙지 않도록 함 */
+  /* overflow: hidden; 넘치는 영역에 대해서는 표시안되도록 작성해야 함 */
+}
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    max-width: 1150px;
+  }
+}
+
+h1{
+  font-family: 'Monofett', cursive;
+  /* font-family: 'Yuji Boku', serif; */
+/* font-family: 'Road Rage', cursive; */
+
+  font-size: 60px;
+  font-weight: 200;
+}
+
+.head_container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.head_container .right_head_items{
+  margin-top: 20px;
+}
+
+.logoBox{
+  display: inline;
+
+  vertical-align: middle;
+  margin: 20px 5px;
+}
+
+.notice_board_container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+
+.searchBoxComponent, #btn-createNewPost{
+  height: 35px;
+  border-radius: 4px;
+}
+
+.searchBoxComponent:focus{
+  outline: none;
+}
+
+#searchCondition{
+  width: 50%;
+}
+
+.searchBox{
+  display: inline;
+  padding: 0px 5px 0px 5px;
+}
+
+button{
+  text-align:center; 
+  cursor: pointer;
+  color:#333;
+  background-color: rgb(144, 179, 255);
+  transition:all 0.9s;
+  width: 100px;
+  height: 30px;
+}
+
+button:hover{
+  box-shadow: 0 80px 0 0 rgba(0,0,0,0.25) inset,
+              0 -80px 0 0 rgba(0,0,0,0.25) inset;
+  color: white;
+}
+  
+.notification_modal, .user_modal, .message_modal, .chatting_modal {
+  background: rgba(228, 243, 255, 0.966);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 200px;
+  padding: 10px;
+  z-index: 10;
+display: none;
+overflow: auto;
+}
+.notification_modal .notification_modal_title ,
+.user_modal .user_modal_title,
+.message_modal .message_modal_title,
+.chatting_modal .chatting_modal_title{
+  padding-left: 10px;
+  display: inline;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+  
+}
+.notification_modal .notification_modal_title h2,
+.user_modal .user_modal_title h2,
+.message_modal .message_modal_title h2,
+.chatting_modal .chatting_modal_title
+ {
+  display: inline;
+}
+.notification_modal .notification_modal_close_area,
+.user_modal .user_modal_close_area,
+.message_modal .message_modal_close_area,
+.chatting_modal .chatting_modal_close_area {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+
+.notification_modal .notification_modal_content,
+.user_modal .user_modal_content, 
+.message_modal .message_modal_content,
+.chatting_modal .chatting_modal_content{
+  margin-top: 20px;
+  padding: 0px 10px;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+
+#chattingTable{
+  margin-bottom: 0px;
+}
+
+.logoBox:hover{
+  cursor: pointer;
+}
+
+.check_button{
+  font-size: 1.4rem;
+  color: rgb(179, 179, 179);
+
+}
+
+.check_button:hover{
+  cursor: pointer;
+}
+
+tr{
+  border: 1px solid;
+}
+
+.isBlack{
+  background-color: rgba(0, 0, 0, 0.747);
+}
